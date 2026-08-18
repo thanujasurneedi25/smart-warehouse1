@@ -1,40 +1,56 @@
-# W.A.R.E. — Warehouse AI Control Center
+# 🚀 W.A.R.E. — Warehouse AI Response & Execution
 
-A hackathon-ready, decision-first warehouse operations platform built with React + TypeScript + Vite.
+> **From warehouse data to intelligent decisions.**
 
-## Why this version is different
+W.A.R.E. is a decision-first warehouse operations platform built for the **Smart Warehouse Operations & Order Fulfillment** challenge.
 
-It does not stop at CRUD dashboards. The product turns warehouse signals into explainable operational recommendations:
+Unlike traditional warehouse dashboards that only display data, W.A.R.E. helps teams **detect problems, prioritize actions, recommend decisions, and resolve exceptions.**
 
-- Priority scoring for orders
-- Smart inventory allocation decisions
-- Low-stock and out-of-stock detection
-- Replenishment recommendations
-- Exception → Decision → Resolution workflow
-- Picking/packing/QC/dispatch workflow board
-- Bottleneck-oriented analytics
-- Search and interactive order decisions
-- Mock data only — no external warehouse API required
+## 🎯 The Problem
 
-## Run
+Warehouses face challenges such as:
 
-```bash
-npm install
-npm run dev
-```
+- Inventory shortages and stockouts
+- Incorrect stock allocation
+- Delayed and high-priority orders
+- Picking and fulfillment bottlenecks
+- Damaged or missing items
+- Slow operational decision-making
 
-Open the local URL printed by Vite.
+## 💡 Our Solution
 
-## Demo scenario
+W.A.R.E. follows:
 
-Open **Orders → ORD-1042**.
+**Exception → Decision → Resolution**
 
-The order is Critical, needs 10 units of WH-552, and the available quantity after reservations is lower than the request. The decision drawer explains the shortage and recommends allocating available stock, placing the remainder on hold, and triggering replenishment.
+It transforms warehouse signals into actionable recommendations.
 
-## Suggested hackathon pitch
+### ⭐ Key Features
 
-"W.A.R.E. does not just tell warehouse teams what is happening. It tells them what needs attention, recommends what to do next, and explains why."
+- 📊 **Command Center** — Real-time operational overview
+- 🛒 **Smart Order Management** — Priority and fulfillment risk detection
+- 🧠 **Inventory Allocation** — Intelligent allocation during stock shortages
+- 🚨 **Exception Intelligence** — Detect and resolve operational issues
+- 📦 **Replenishment Recommendations** — Identify low-stock and stockout risks
+- 🚚 **Fulfillment Workflow** — Order → Picking → Packing → QC → Dispatch
+- 📍 **Bottleneck Analytics** — Identify operational slowdowns
+- 🤖 **Decision Copilot** — Explain recommendations and their reasoning
+- 🧪 **Interactive Demo** — Test real warehouse scenarios with mock data
 
-## Note
+## 🎬 Demo Scenario
 
-This is a self-contained mock-data MVP. For a production version, connect the data layer to a real WMS/ERP and replace the deterministic decision engine with a monitored rules/optimization service or an LLM-assisted explanation layer.
+**Order:** ORD-1042  
+**Priority:** Critical  
+**Required:** 10 units  
+**Available:** 7 units
+
+W.A.R.E. detects the shortage and recommends:
+
+```text
+Allocate available stock
+        ↓
+Hold remaining quantity
+        ↓
+Trigger replenishment
+        ↓
+Keep critical order prioritized
